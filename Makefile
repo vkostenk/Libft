@@ -6,7 +6,7 @@
 #    By: vkostenk <vkostenk@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/03/26 12:06:46 by vkostenk          #+#    #+#              #
-#    Updated: 2018/07/16 15:43:15 by vkostenk         ###   ########.fr        #
+#    Updated: 2018/07/16 15:47:25 by vkostenk         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -73,7 +73,8 @@ SRC = ft_atoi.c\
 			ft_strtrim.c\
 			ft_tolower.c\
 			ft_toupper.c\
-			ft_isspace.c
+			ft_isspace.c\
+			ft_count_words.c
 
 OBJ=$(SRC:.c=.o)
 

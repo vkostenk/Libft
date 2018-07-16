@@ -6,7 +6,7 @@
 /*   By: vkostenk <vkostenk@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/07/13 13:39:06 by vkostenk          #+#    #+#             */
-/*   Updated: 2018/07/16 15:07:04 by vkostenk         ###   ########.fr       */
+/*   Updated: 2018/07/16 15:47:56 by vkostenk         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,23 +19,6 @@ static size_t	ft_count_letters(char const *str, char c)
 	count = 0;
 	while (str[count] != c && str[count])
 		count++;
-	return (count);
-}
-
-static size_t	ft_count_words(char const *str, char c)
-{
-	size_t	count;
-
-	count = 0;
-	while (*str)
-	{
-		if (*str != c)
-		{
-			if (*(str + 1) == c || *(str + 1) == '\0')
-				count++;
-		}
-		str++;
-	}
 	return (count);
 }
 
