@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: vkostenk <marvin@42.fr>                    +#+  +:+       +#+         #
+#    By: vkostenk <vkostenk@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/03/26 12:06:46 by vkostenk          #+#    #+#              #
-#    Updated: 2018/03/26 12:13:55 by vkostenk         ###   ########.fr        #
+#    Updated: 2018/07/15 21:43:21 by vkostenk         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,13 +14,14 @@ NAME = libft.a
 CC = gcc -c
 AR = ar rc
 W = -W -Wall -Wextra -Werror
+HEADER = libft.h
 SRC = *.c
 OBJ = *.o
 
 all: $(NAME)
 
 $(NAME):
-	$(CC) $(W) $(SRC)
+	$(CC) $(W) $(SRC) -I $(HEADER)
 	$(AR) $(NAME) $(OBJ)
 	ranlib $(NAME)
 
