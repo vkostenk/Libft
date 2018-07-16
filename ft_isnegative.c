@@ -6,11 +6,11 @@
 /*   By: vkostenk <vkostenk@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/07/16 15:51:36 by vkostenk          #+#    #+#             */
-/*   Updated: 2018/07/16 16:00:51 by vkostenk         ###   ########.fr       */
+/*   Updated: 2018/07/16 16:09:37 by vkostenk         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-##include "libft.h"
+#include "libft.h"
 
 int	ft_isnegative(int n)
 {
