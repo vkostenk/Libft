@@ -6,7 +6,7 @@
 /*   By: vkostenk <vkostenk@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/04/03 13:03:32 by vkostenk          #+#    #+#             */
-/*   Updated: 2018/07/16 15:49:47 by vkostenk         ###   ########.fr       */
+/*   Updated: 2018/07/16 15:59:59 by vkostenk         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -84,5 +84,6 @@ void				ft_lstadd(t_list **alst, t_list *new);
 void				ft_lstiter(t_list *lst, void (*f)(t_list *elem));
 t_list				*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem));
 size_t				ft_count_words(char const *str, char c);
+int					ft_isnegative(int n);
 
 #endif
