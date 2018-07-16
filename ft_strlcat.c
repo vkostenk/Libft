@@ -6,7 +6,7 @@
 /*   By: vkostenk <vkostenk@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/07/10 20:21:31 by vkostenk          #+#    #+#             */
-/*   Updated: 2018/07/14 20:18:40 by vkostenk         ###   ########.fr       */
+/*   Updated: 2018/07/16 14:17:03 by vkostenk         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,19 +23,14 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 	k = ft_strlen(src);
 	while (dst[i] && i < dstsize)
 		i++;
-	if (dstsize > 0)
+	if (i != dstsize)
 	{
-		while (src[j] && i < dstsize - 1)
+		while (src[j] && j < dstsize - i -1)
 		{
-			dst[i] = src[j];
-			i++;
+			dst[i + j] = src[j];
 			j++;
 		}
-	}
-	if (j > 0)
-	{
-		dst[i] = '\0';
-		return (k + i - j);
+		dst[i + j] = '\0';
 	}
 	return (k + i);
 }
