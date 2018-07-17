@@ -6,7 +6,7 @@
 /*   By: vkostenk <vkostenk@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/07/14 13:06:28 by vkostenk          #+#    #+#             */
-/*   Updated: 2018/07/14 14:36:35 by vkostenk         ###   ########.fr       */
+/*   Updated: 2018/07/16 18:31:02 by vkostenk         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ t_list	*ft_lstnew(void const *content, size_t content_size)
 {
 	t_list	*node;
 
-	if (!(node = (t_list *)malloc(sizeof(t_list))))
+	if (!(node = malloc(sizeof(t_list))))
 		return (NULL);
 	if (!content || !content_size)
 	{
