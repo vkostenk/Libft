@@ -1,2 +1,2 @@
 # Libft
-my library
+Set of custom made functions.
